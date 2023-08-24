@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Desc</th>
+            <th>PIC</th>
+            <th>REsume</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        {%for i in form%}
+        <tr>
+            <td>{{i.name}}</th>
+            <td>{{i.email}}</th>
+            <td>{{i.phone}}</th>
+            <td>{{i.gender}}</th>
+            <td>{{i.age}}</th>
+            <td>{{i.desc}}</th>
+            <td>{{i.profile_picture}}</th>
+            <td>{{i.profile_resume}}</th>
+            <td><a href="{%url 'user:update' pk=i.id%}">Update</a></th>
+            <td><a href="{%url 'user:delete' pk=i.id%}">Delete</a></th>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+#4.Write a python script to fetch data from news API
+
+#API to be used: https://newsapi.org/v2/everything?q-tesla&sortBy-publishedAt #API Key: 9cf45a75ed4148df8132b32fa9ecd57e
+
+#Note: Data is in json format
+
+#a.Convert it to a pandas data frame that has only 5 columns author, title, description, source_name, content.
+
+#b.Remove the ".com" word in the source_name column
+
+#c. Remove all the special characters for description column
+
+I
+
+#d. Implement error handling
+
+import requests
+
+import pandas as pd
+
+from pandas import json_normalize
+
+def get_news():
+
+Your

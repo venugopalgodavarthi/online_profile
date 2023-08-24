@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>Name:</th>
+            <td>{{user.name}}</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>{{user.email}}</td>
+        </tr>
+        <tr>
+            <th>Phone:</th>
+            <td>{{user.phone}}</td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td>{{user.gender}}</td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td>{{user.age}}</td>
+        </tr>
+        <tr>
+            <th>DESC:</th>
+            <td>{{user.desc}}</td>
+        </tr>
+
+        <tr>
+            <th>profile_Picture:</th>
+            <td><img src="{{ user.profile_picture.url }}" alt="Profile Picture" height="150" width="150"></td>
+        </tr>
+
+        <tr>
+            <th>profile_Resume:</th>
+            <td><a href="{{ user.profile_resume.url }}" download="resume">Profile_Resume</a></td>
+        </tr>
+
+    </table>
+    <a href="{% url 'user:register' %}"><button>Register Page</button></a>
+</body>
+
+</html>

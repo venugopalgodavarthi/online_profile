@@ -1,0 +1,30 @@
+1) Wap to find out the factorial number given number using while loop
+2) Wap to print 19 tables within the given range.
+	Format: 	19 * 1 = 19
+			19 * 2 = 38
+
+3) Wap to return following output.
+	Input: "PYSPIDERS"
+	Output: "SrEdIpSyP"
+
+4) Wap to store the series of cube numbers in a dict given in the range.
+
+	Format ={1:1, 2:8}
+
+5) Write a Python program to find Sum of keys in a Dictionary.
+
+6) WAP TO CHECK WHEATHER THE GIVEN NUMBER IS PALINDROME OR NOT.
+	NOTE :(WITHOUT USING TYPE CASTING)
+	I/P:121
+	O/P:True
+7) WAP TO REPLACE A SPECIFIC CHARACTER WITH NEW CHARACTER
+	EX:
+
+	I/P: RAJA
+	O/P: R$J$
+
+8) WAP TO COUNT OCCURANCE OF SPECIFIC CHARACT
+ER IN A GIVEN STRING.
+	I/P="VINAY IS HERO"
+	I/P='I'
+	O/P=2
